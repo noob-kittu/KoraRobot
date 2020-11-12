@@ -9,7 +9,7 @@ GENERATED FROM [THIS REPOSITORY](https://github.com/AnimeKaizoku/SaitamaRobot)
 
 
 
-[![phantom](https://telegra.ph/file/72b6a2032bd19642ff759.jpg)]
+[![phantom](https://telegra.ph/file/d0ee4291e14794f693e97.jpg)]
 
 
 
