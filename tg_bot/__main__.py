@@ -1,5 +1,4 @@
 import importlib
-import os
 import re
 import json
 import requests
@@ -32,6 +31,8 @@ I am an Anime themed group management bot.
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 
+Join Our [Support Group](https://t.me/KoraSupport)
+
 """
 
 HELP_STRINGS = """
@@ -61,14 +62,6 @@ DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
-GDPR = []
-
-START_IMG = os.environ.get('START_IMG', None)
-if START_IMG is None:
-    img = "https://telegra.ph/file/d0ee4291e14794f693e97.jpg"
-else:
-  img = START_IMG    
-    
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("tg_bot.modules." + module_name)
