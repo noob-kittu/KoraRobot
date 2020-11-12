@@ -24,7 +24,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
-PM__TEXT = """
+PM_TEXT = """
 
 Hi, my name is __Kora__ ! 
 I am an Anime themed group management bot.
