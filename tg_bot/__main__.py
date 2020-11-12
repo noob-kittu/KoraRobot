@@ -24,9 +24,6 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
-
-START_IMG = "https://telegra.ph/file/0c1732e996a5d3b0ffc55.jpg"   
-
 PM__TEXT = """
 
 Hi, my name is __Kora__ ! 
