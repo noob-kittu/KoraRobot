@@ -23,7 +23,13 @@ from tg_bot.modules.disable import DisableAbleCommandHandler
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
+GDPR = []
 
+START_IMG = os.environ.get('START_IMG', None)
+if START_IMG is None:
+    img = "https://telegra.ph/file/0c1732e996a5d3b0ffc55.jpg"
+else:
+  img = START_IMG    
 
 PM_START_TEXT = """
 
