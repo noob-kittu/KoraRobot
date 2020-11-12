@@ -25,11 +25,9 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 
-START_IMG = os.environ.get('START_IMG', None)
-if START_IMG is None:
-    img = "https://telegra.ph/file/0c1732e996a5d3b0ffc55.jpg"   
+START_IMG = "https://telegra.ph/file/0c1732e996a5d3b0ffc55.jpg"   
 
-PM_START_TEXT = """
+PM__TEXT = """
 
 Hi, my name is __Kora__ ! 
 I am an Anime themed group management bot.
