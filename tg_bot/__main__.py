@@ -26,12 +26,11 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-Hi, my name is __Kora__ ! 
+*Hi* {}, My name is __Kora__! 
 I am an Anime themed group management bot.
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
-
-Join Our [Support Group](https://t.me/KoraSupport)
+You can find my list of *available commands* with :
+👉 /help.
 
 """
 
@@ -50,6 +49,7 @@ I am a blank, I will be your partner and can help make your group great and attr
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
+KORA_IMG = "https://images5.alphacoders.com/673/thumb-1920-673525.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -138,14 +138,25 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="ADD ME TO YOUR GROUP",
-                                                                       url="t.me/{}?startgroup=true".format(bot.username))]]))
-
+            update.effective_message.reply_photo(
+                KORA_IMG,
+                PM_START_TEXT.format(
+                    escape_markdown(first_name), 
+                    escape_markdown(bot.first_name), OWNER_ID),
+                parse_mode=ParseMode.MARKDOWN,
+                disable_web_page_preview=True,
+                reply_markup=InlineKeyboardMarkup(
+               [[
+               InlineKeyboardButton(
+                   text="👑 SUMMON ME",
+                   url="t.me/{}?startgroup=true".format(bot.username)),
+               InlineKeyboardButton(
+                             text="⚡️ Get Support",
+                             url=f"https://t.me/KoraSupport")
+               ]]))
 
     else:
-        update.effective_message.reply_text("Yo, whadup?🤧")
+        update.effective_message.reply_text("Yo, whadup? 🤧")
 
 
 def send_start(bot, update):
