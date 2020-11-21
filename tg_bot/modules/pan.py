@@ -3,14 +3,14 @@ from io import BytesIO
 from PIL import Image
 from telegram import Message, Update, Bot, User
 from telegram.ext import Filters, MessageHandler, run_async
-from BulmaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from BulmaRobot.modules.disable import DisableAbleCommandHandler
-from BulmaRobot import dispatcher
+from tg_bot.modules.helper_funcs.extraction import extract_user_and_text
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot import dispatcher
 
 
 @run_async
 def pan(bot: Bot, update: Update):
-    from BulmaRobot.modules.thonkify_dict import thonkifydict
+    from tg_bot.modules.thonkify_dict import thonkifydict
 
     message = update.effective_message
     if not message.reply_to_message:
