@@ -30,7 +30,7 @@ PM_START_TEXT = """
 I am an Anime themed group management bot.
 Build by weebs for weebs, I specialize in managing anime and similar themed groups.
 You can find my list of *available commands* with :
-👉 /help.
+👉 /help
 
 """
 
@@ -49,7 +49,7 @@ I am a blank, I will be your partner and can help make your group great and attr
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KORA_IMG = "https://telegra.ph/file/2fbf54ecf569496431507.jpg"
+KORA_IMG = "https://images5.alphacoders.com/673/thumb-1920-673525.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
