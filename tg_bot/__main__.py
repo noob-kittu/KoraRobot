@@ -49,7 +49,7 @@ I am a blank, I will be your partner and can help make your group great and attr
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-KORA_IMG = "https://telegra.ph/file/8736e3864f070873d092f.jpg"
+KORA_IMG = "https://telegra.ph/file/2fbf54ecf569496431507.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
