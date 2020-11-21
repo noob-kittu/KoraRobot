@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageOps
-from tg_bot.tl import types, functions
+from tg_bot import types, functions
 from fontTools.ttLib import TTFont 
 from fontTools.unicode import Unicode 
 import emoji
