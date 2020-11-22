@@ -310,26 +310,25 @@ Commands:
  - /cas: Info about CAS. (What is CAS?)
 """
 
-/*
-
-__mod_name__ = "CAS"
-
-SETCAS_HANDLER = CommandHandler("setcas", setcas, filters=Filters.group)
-GETCAS_HANDLER = CommandHandler("getcas", get_current_setting, filters=Filters.group)
-GETVER_HANDLER = DisableAbleCommandHandler("casver", get_version)
-CASCHECK_HANDLER = CommandHandler("cascheck", caschecker, pass_args=True)
-CASQUERY_HANDLER = CommandHandler("casquery", casquery, pass_args=True ,filters=CustomFilters.sudo_filter)
-SETBAN_HANDLER = CommandHandler("setban", setban, filters=Filters.group)
-GBANCHAT_HANDLER = CommandHandler("blchat", gbanChat, pass_args=True, filters=CustomFilters.sudo_filter)
-UNGBANCHAT_HANDLER = CommandHandler("unblchat", ungbanChat, pass_args=True, filters=CustomFilters.sudo_filter)
-DEFENSE_HANDLER = CommandHandler("setdefense", setDefense, pass_args=True)
-GETDEF_HANDLER = CommandHandler("defense", getDefense)
-GETTIMESET_HANDLER = CommandHandler("kicktime", getTimeSetting)
-SETTIMER_HANDLER = CommandHandler("setkicktime", setTimeSetting, pass_args=True)
-ABOUT_CAS_HANDLER = CommandHandler("cas",  about_cas)
 
 
-*/
+# __mod_name__ = "CAS"
+
+# SETCAS_HANDLER = CommandHandler("setcas", setcas, filters=Filters.group)
+# GETCAS_HANDLER = CommandHandler("getcas", get_current_setting, filters=Filters.group)
+# GETVER_HANDLER = DisableAbleCommandHandler("casver", get_version)
+# CASCHECK_HANDLER = CommandHandler("cascheck", caschecker, pass_args=True)
+# CASQUERY_HANDLER = CommandHandler("casquery", casquery, pass_args=True ,filters=CustomFilters.sudo_filter)
+# SETBAN_HANDLER = CommandHandler("setban", setban, filters=Filters.group)
+# GBANCHAT_HANDLER = CommandHandler("blchat", gbanChat, pass_args=True, filters=CustomFilters.sudo_filter)
+# UNGBANCHAT_HANDLER = CommandHandler("unblchat", ungbanChat, pass_args=True, filters=CustomFilters.sudo_filter)
+# DEFENSE_HANDLER = CommandHandler("setdefense", setDefense, pass_args=True)
+# GETDEF_HANDLER = CommandHandler("defense", getDefense)
+# GETTIMESET_HANDLER = CommandHandler("kicktime", getTimeSetting)
+# SETTIMER_HANDLER = CommandHandler("setkicktime", setTimeSetting, pass_args=True)
+# ABOUT_CAS_HANDLER = CommandHandler("cas",  about_cas)
+
+
 
 
 dispatcher.add_handler(SETCAS_HANDLER)
