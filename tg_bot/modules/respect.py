@@ -37,6 +37,6 @@ __help__ = """
 
 __mod_name__ = "Respect"
 
-DARK_HANDLER = DisableAbleCommandHandler("respect", respect)
+RESPECT_HANDLER = DisableAbleCommandHandler("respect", respect)
 
 dispatcher.add_handler(RESPECT_HANDLER)
