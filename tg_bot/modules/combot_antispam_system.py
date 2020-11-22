@@ -310,6 +310,8 @@ Commands:
  - /cas: Info about CAS. (What is CAS?)
 """
 
+/*
+
 __mod_name__ = "CAS"
 
 SETCAS_HANDLER = CommandHandler("setcas", setcas, filters=Filters.group)
@@ -327,7 +329,7 @@ SETTIMER_HANDLER = CommandHandler("setkicktime", setTimeSetting, pass_args=True)
 ABOUT_CAS_HANDLER = CommandHandler("cas",  about_cas)
 
 
-
+*/
 
 
 dispatcher.add_handler(SETCAS_HANDLER)
