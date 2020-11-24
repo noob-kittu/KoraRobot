@@ -26,12 +26,6 @@ wikipedia
 pyowm
 tabulate
 parsel
-geopy
-future
-emoji
-requests
-Telethon==1.16.4
-sqlalchemy
 pylast
 python-telegram-bot==12.8
 ffmpeg
@@ -40,7 +34,6 @@ youtube-search-python
 psycopg2-binary
 pythonping
 pybase64
-feedparser
 html2text
 spotdl
 validators
@@ -48,7 +41,6 @@ pickledb
 redis
 pytz
 pafy
-gtts
 bs4
 lxml
 demjson
@@ -56,17 +48,14 @@ wget
 bs4
 telegraph
 pillow
-psutil
 speedtest-cli>=2.0.2
 hachoir
 googletrans
 youtube-dl
-wikipedia
 spamwatch
 bleach
 git+https://github.com/p-rinc-e/python-markdown2.git
 alphabet_detector
-tswift
 covid
 hurry.filesize
 fontTools
