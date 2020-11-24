@@ -162,6 +162,15 @@ SUPPORT_USERS = list(SUPPORT_USERS)
 TIGER_USERS = list(TIGER_USERS)
 SPAMMERS = list(SPAMMERS)
 
+# Telethon
+api_id = TELETHON_ID
+api_hash = TELETHON_HASH
+client = TelegramClient("tg_bot", api_id, api_hash)
+
+updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
+
+dispatcher = updater.dispatcher
+
 # Load at end to ensure all prev variables have been set
 from tg_bot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
 
