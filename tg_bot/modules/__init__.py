@@ -1,3 +1,5 @@
+import sys
+
 from tg_bot import LOAD, NO_LOAD, LOGGER
 
 
