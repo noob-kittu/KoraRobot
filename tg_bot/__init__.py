@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import time
+from telethon import TelegramClient
 import telegram.ext as tg
 
 StartTime = time.time()
