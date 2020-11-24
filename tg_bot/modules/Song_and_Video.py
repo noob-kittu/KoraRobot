@@ -6,7 +6,7 @@ from asyncio import sleep
 from telethon.events import NewMessage
 from telethon.tl.custom import Dialog
 from datetime import datetime as dt
-# from pytz import country_names as c_n, country_timezones as c_tz, timezone as tz
+from pytz import country_names as c_n, country_timezones as c_tz, timezone as tz
 from hachoir.parser import createParser
 import pybase64
 from base64 import b64decode
