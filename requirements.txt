@@ -46,7 +46,6 @@ demjson
 wget
 bs4
 telegraph
-speedtest-cli>=2.0.2
 hachoir
 googletrans
 youtube-dl
