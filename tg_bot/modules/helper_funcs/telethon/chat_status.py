@@ -1,4 +1,4 @@
-from Elizabeth import client, SUDO_USERS, WHITELIST_USERS
+from tg_bot import client, SUDO_USERS, WHITELIST_USERS
 from telethon import functions, types
 from telethon.tl.types import ChannelParticipantsAdmins
 
