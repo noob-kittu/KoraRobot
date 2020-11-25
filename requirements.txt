@@ -1,6 +1,7 @@
 future
 emoji
 beautifulsoup4
+python-telegram-bot==11.1.0
 requests
 sqlalchemy
 psycopg2-binary
@@ -24,5 +25,4 @@ wikipedia
 pyowm
 tabulate
 parsel
-python-telegram-bot==12.8
 telethon
