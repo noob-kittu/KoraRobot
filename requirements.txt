@@ -25,4 +25,3 @@ wikipedia
 pyowm
 tabulate
 parsel
-telethon
