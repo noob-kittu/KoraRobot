@@ -25,3 +25,5 @@ wikipedia
 pyowm
 tabulate
 parsel
+python-telegram-bot==12.8
+telethon
