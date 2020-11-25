@@ -440,6 +440,8 @@ __help__ = """
  - /getfw <model> <csc> - Samsung only - gets firmware download links from samfrew, sammobile and sfirmwares for the given device
 
  - /imdb <movie or TV series name>: View IMDb results for selected movie or TV series 
+ 
+ - /git:{GitHub username} Returns info about a GitHub user or organization.
 """
 
 ID_HANDLER = DisableAbleCommandHandler("id", get_id, pass_args=True)
