@@ -362,7 +362,6 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
  - /adminlist: list of admins in the chat
-
 *Admin only:*
  - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
  - /unpin: unpins the currently pinned message
@@ -373,7 +372,6 @@ __help__ = """
  - /settitle: Sets a custom title for an admin which is promoted by bot.
  - /setgpic: As a reply to file or photo to set group profile pic!
  - /delgpic: Same as above but to remove group profile pic.
-
 """
 
 
@@ -405,7 +403,7 @@ dispatcher.add_handler(CHAT_PIC_HANDLER)
 dispatcher.add_handler(DEL_CHAT_PIC_HANDLER)
 dispatcher.add_handler(ADMINLIST_HANDLER)
 
-__mod_name__ = "ADMIN"
+__mod_name__ = "Admin"
 
 __command_list__ = ["adminlist", "admins", "invitelink"]
 
