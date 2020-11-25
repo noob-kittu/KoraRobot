@@ -33,7 +33,7 @@ BOX_HANDLER = DisableAbleCommandHandler("box", box, pass_args=True)
  
 dispatcher.add_handler(BOX_HANDLER)
  
-__mod_name__ = "Box Text"
+__mod_name__ = "BOX TEXT"
 __command_list__ = ["box"]
 __handlers__ = [BOX_HANDLER]
  
