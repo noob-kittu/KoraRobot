@@ -34,10 +34,20 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
         if chat.type == "private":
             exit(1)
 
+
+
     if not chatD.get_member(bot.id).can_promote_members:
         update.effective_message.reply_text("I can't promote/demote people here! "
                                             "Make sure I'm admin and can appoint new admins.")
         exit(1)
+
+    promoter = chat.get_member(user.id)
+     
+    if not promoter.can_promote_members or
+            promoter.status == "creator":
+        message.reply_text("You don't have the necessary rights to do that!")
+        return
+
 
     user_id = extract_user(message, args)
     if not user_id:
