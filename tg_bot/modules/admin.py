@@ -41,13 +41,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                                             "Make sure I'm admin and can appoint new admins.")
         exit(1)
 
-    promoter = chat.get_member(user.id)
      
-    if not promoter.can_promote_members or
-            promoter.status == "creator":
-        message.reply_text("You don't have the necessary rights to do that!")
-        return
-
 
     user_id = extract_user(message, args)
     if not user_id:
