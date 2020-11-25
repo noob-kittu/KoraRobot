@@ -39,22 +39,22 @@ EDIT_TIMES = 10
 
 
 
-#sleep how many times after each edit in 'earthanimation' 
+#sleep how many times after each edit in 'earth' 
 EDIT_SLEEP = 1
-#edit how many times in 'earthanimation' 
+#edit how many times in 'earth' 
 EDIT_TIMES = 18
 
 
-#sleep how many times after each edit in 'moonanimation' 
+#sleep how many times after each edit in 'moon' 
 EDIT_SLEEP = 1
-#edit how many times in 'moonanimation' 
+#edit how many times in 'moon' 
 EDIT_TIMES = 32
 
 
 
-#sleep how many times after each edit in 'clockanimation' 
+#sleep how many times after each edit in 'clock' 
 EDIT_SLEEP = 1
-#edit how many times in 'clockanimation' 
+#edit how many times in 'clock' 
 EDIT_TIMES = 11
 
 
@@ -246,7 +246,7 @@ def blockanimation(bot: Bot, update: Update):
 
 @user_admin
 @run_async
-def clockanimation(bot: Bot, update: Update):
+def clock(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('🕛') 
     for x in range(EDIT_TIMES):
         msg.edit_text(clock_ani[x%11])
@@ -257,7 +257,7 @@ def clockanimation(bot: Bot, update: Update):
 
 @user_admin
 @run_async
-def earthanimation(bot: Bot, update: Update):
+def earth(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('🌏') 
     for x in range(EDIT_TIMES):
         msg.edit_text(earth_ani[x%18])
@@ -269,7 +269,7 @@ def earthanimation(bot: Bot, update: Update):
 
 @user_admin
 @run_async
-def moonanimation(bot: Bot, update: Update):
+def moon(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('🌚') 
     for x in range(EDIT_TIMES):
         msg.edit_text(moon_ani[x%32])
@@ -351,11 +351,11 @@ __help__ = """
 
 - /bombs 💣
 
-- /moonanimation 🌚
+- /moon 🌚
 
-- /clockanimation 🕛
+- /clock 🕛
 
-- /earthanimation 🌍
+- /earth 🌍
 
 - /blockanimation 🟥
 
@@ -368,20 +368,20 @@ KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
-MOONANIMATION_HANDLER =DisableAbleCommandHandler("moonanimation",moonanimation)
-CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clockanimation",clockanimation)
+moon_HANDLER =DisableAbleCommandHandler("moon",moon)
+clock_HANDLER =DisableAbleCommandHandler("clock",clock)
 BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("blockanimation",blockanimation)
-EARTHANIMATION_HANDLER =DisableAbleCommandHandler("earthanimation",earthanimation)
+earth_HANDLER =DisableAbleCommandHandler("earth",earth)
 dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
-dispatcher.add_handler(EARTHANIMATION_HANDLER)
-dispatcher.add_handler(MOONANIMATION_HANDLER)
-dispatcher.add_handler(CLOCKANIMATION_HANDLER)
+dispatcher.add_handler(earth_HANDLER)
+dispatcher.add_handler(moon_HANDLER)
+dispatcher.add_handler(clock_HANDLER)
 dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 
 __mod_name__ = "EMOJIS"
-__command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "earthanimation", "blockanimation", "kill"]
-__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, EARTHANIMATION_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
+__command_list__ = ["love", "hack", "bombs", "moon", "clock", "earth", "blockanimation", "kill"]
+__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, moon_HANDLER, clock_HANDLER, earth_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
