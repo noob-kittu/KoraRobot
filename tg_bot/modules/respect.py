@@ -35,7 +35,7 @@ __help__ = """
 - /respect  🤬.
 """
 
-__mod_name__ = "Respect"
+__mod_name__ = "RESPECT"
 
 RESPECT_HANDLER = DisableAbleCommandHandler("respect", respect)
 
